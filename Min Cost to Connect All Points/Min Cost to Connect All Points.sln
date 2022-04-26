@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Min Cost to Connect All Points", "Min Cost to Connect All Points\Min Cost to Connect All Points.csproj", "{610B3A9B-B85D-44B2-AEA1-1801ECF545BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{610B3A9B-B85D-44B2-AEA1-1801ECF545BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{610B3A9B-B85D-44B2-AEA1-1801ECF545BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{610B3A9B-B85D-44B2-AEA1-1801ECF545BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{610B3A9B-B85D-44B2-AEA1-1801ECF545BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {159FA61C-6A75-484B-AD92-C1D6569A20BC}
+	EndGlobalSection
+EndGlobal
