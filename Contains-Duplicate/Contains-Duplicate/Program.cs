@@ -2,13 +2,11 @@
 {
     public bool ContainsDuplicate(int[] nums)
     {
-        List<int> unique = new List<int>(nums.Length);
+        HashSet<int> unique = new HashSet<int>(nums.Length);
         foreach (int num in nums)
         {
-            if(unique.Contains(num))
+            if(!unique.Add(num))
                 return true;
-            unique.Add(num);
-            
         }
         return false;
     }
