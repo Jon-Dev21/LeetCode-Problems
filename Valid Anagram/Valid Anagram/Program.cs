@@ -2,6 +2,7 @@
 {
     static void Main(string[] args)
     {
+        Console.WriteLine(IsAnagram("aacc", "ccac"));
         Console.WriteLine(IsAnagram("a", "ab"));
         Console.WriteLine(IsAnagram("rat", "car"));
         Console.WriteLine(IsAnagram("rat", "tar"));
@@ -18,18 +19,19 @@
         else
         {
             int equalLetters = 0;
-            for (int i = 0; i < s.Length; i++)
+            for (int i = 0; i < t.Length; i++)
             {
-                for (int j = 0; j < s.Length; j++)
+                if(!s.Contains(t[i]))
+                    return false;
+                else
                 {
-                    if (s[i] == t[j])
-                    {
-                        equalLetters++;
-                        break;
-                    }
+                    int pos = s.IndexOf(t[i]);
+                    equalLetters++;
+                    s = s.Substring(0, pos) +s.Substring(pos+1);
                 }
+                    
             }
-            return (equalLetters == s.Length ? true : false);
+            return (equalLetters == t.Length ? true : false);
         }
             
     }
