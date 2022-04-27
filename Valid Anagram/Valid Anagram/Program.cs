@@ -21,7 +21,7 @@
             int equalLetters = 0;
             for (int i = 0; i < t.Length; i++)
             {
-                if(!s.Contains(t[i]))
+                if(s.IndexOf(t[i]) == -1)
                     return false;
                 else
                 {
