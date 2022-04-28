@@ -9,17 +9,19 @@
 
     public static bool IsPalindrome(string s)
     {
-        string temp = "";
-        string temp2 = "";
+        string reversed = "";
+        string straight = "";
+        string dbReverse = "";
         s = s.ToLower().Trim();
         for(int i = 0; i < s.Length; i++)
         {
             if (char.IsLetterOrDigit(s[i]))
             {
-                temp = s[i] + temp; // Reversed trimmed and lower case string
-                temp2 += s[i]; // Original trimmed and lower case string
+                reversed = s[i] + reversed; // Reversed trimmed and lower case string
+                straight += s[i]; // Original trimmed and lower case string
+                dbReverse += reversed;
             }
         }
-        return temp == temp2;
+        return reversed == straight || dbReverse == straight;
     }
 }
